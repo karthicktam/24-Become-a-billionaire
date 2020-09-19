@@ -10,7 +10,6 @@ export default function App() {
   const [billions, setBillions] = useState([]);
 
   const showMoney = (billionsArr, interval) => {
-    console.log({ billionsArr, fillScreenScore, billions });
     if (fillScreenScore <= billionsArr.length) {
       fillScreenScore = fillScreenScore + 1;
       setBillions(
