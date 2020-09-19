@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:300,700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Muli", sans-serif;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+.screen {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.button-3d {
+  background-color: rgba(155, 89, 182, 1);
+  border: 2px solid rgba(142, 68, 173, 1);
+  border-radius: 8px;
+  box-shadow: 0 6px rgba(155, 89, 182, 1), 0 8px rgba(142, 68, 173, 1);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 30px;
+  position: relative;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 0.2s linear, box-shadow 0.2s linear;
+  text-decoration: none;
+}
+
+.button-3d:active {
+  transform: translateY(8px);
+  box-shadow: 0 0 rgba(155, 89, 182, 1), 0 0 rgba(142, 68, 173, 1);
+}
+
+.button-3d:focus {
+  outline: none;
+}
+
+.score {
+  color: rgba(155, 89, 182, 1);
+  font-weight: bold;
+}
+
+.fa-money-bill-wave {
+  color: #6ab04c;
+  margin: 2px;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.congrats {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+  color: #f6e58d;
+  position: fixed;
+  font-size: 1.5rem;
+  top: 50%;
+  left: 50%;
+  margin: 0;
+  transform: translate(-50%, -50%);
+}
